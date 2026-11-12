@@ -1,0 +1,48 @@
+{
+  "github_username": "emsmpokos",
+  "prompt_user": "esmp",
+  "prompt_host": "lab",
+  "command": "neofetch",
+  "sections": [
+    {
+      "title": "about me",
+      "rows": [
+        ["name", "Emmanouil (Manos) Smpokos"],
+        ["position", "MSc Student"],
+        ["affiliation", "Leiden University / Leiden Observatory"],
+        ["interests", "Circumstellar disks, exoplanets"]
+      ]
+    },
+    {
+      "title": "contact",
+      "rows": [
+        ["email", "emsbokos@gmail.com"],
+        ["academic email", "smpokos@strw.leidenuniv.nl"],
+        ["linkedin", "in/emsmpokos"]
+      ]
+    },
+    {
+      "title": "toolbox",
+      "rows": [
+        ["programming languages", "Python, C, C++, Tensorflow"],
+        ["technical skills", "Machine Learning, Linux, Version control,"],
+        ["software", "SAODS9, DaVinci Resolve"]
+      ]
+    },
+    {
+      "title": "system",
+      "rows": [
+        ["operating systems", "Fedora, MacOS"],
+        ["wm", "niri"],
+        ["terminal", "Ghostty"],
+        ["ide / text editor", "Neovim, Jupyter lab"]
+      ]
+    }
+  ],
+  "stats": {
+    "repos": "0",
+    "stars": "0",
+    "commits": "0",
+    "contributions": "0"
+  }
+}
