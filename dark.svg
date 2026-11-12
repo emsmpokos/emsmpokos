@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="931" height="718" viewBox="0 0 931 718">
-<rect x="1" y="1" width="929" height="716" rx="14" fill="#0b0e1a" stroke="#252a41"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="931" height="734" viewBox="0 0 931 734">
+<rect x="1" y="1" width="929" height="732" rx="14" fill="#0b0e1a" stroke="#252a41"/>
 <circle cx="26" cy="22" r="5" fill="#ff5f57"/><circle cx="44" cy="22" r="5" fill="#febc2e"/><circle cx="62" cy="22" r="5" fill="#28c840"/>
 <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14" xml:space="preserve">
 <text x="32" y="54" textLength="176.4" lengthAdjust="spacingAndGlyphs"><tspan fill="#86efac">esmp@lab</tspan><tspan fill="#c9d1e6"> ~ $ </tspan><tspan fill="#f0abfc">neofetch</tspan></text>
@@ -22,10 +22,10 @@
 <text x="32" y="516" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">terminal</tspan><tspan fill="#3a4060"> ······································· </tspan><tspan fill="#f0abfc">Ghostty</tspan></text>
 <text x="32" y="538" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">ide / text editor</tspan><tspan fill="#3a4060"> ·················· </tspan><tspan fill="#f0abfc">Neovim, Jupyter lab</tspan></text>
 <text x="32" y="582" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">╭─</tspan><tspan fill="#fbbf24"> github stats </tspan><tspan fill="#3a4060">──────────────────────────────────────────</tspan></text>
-<text x="32" y="604" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">repos</tspan><tspan fill="#3a4060"> ················································ </tspan><tspan fill="#f0abfc">5</tspan></text>
+<text x="32" y="604" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">repos</tspan><tspan fill="#3a4060"> ················································ </tspan><tspan fill="#f0abfc">0</tspan></text>
 <text x="32" y="626" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">stars</tspan><tspan fill="#3a4060"> ················································ </tspan><tspan fill="#f0abfc">0</tspan></text>
-<text x="32" y="648" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">commits</tspan><tspan fill="#3a4060"> ············································· </tspan><tspan fill="#f0abfc">21</tspan></text>
-<text x="32" y="670" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">total contributions</tspan><tspan fill="#3a4060"> ································· </tspan><tspan fill="#f0abfc">17</tspan></text>
+<text x="32" y="648" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">commits</tspan><tspan fill="#3a4060"> ·············································· </tspan><tspan fill="#f0abfc">0</tspan></text>
+<text x="32" y="670" textLength="487.2" lengthAdjust="spacingAndGlyphs"><tspan fill="#3a4060">│ </tspan><tspan fill="#5eead4">total contributions</tspan><tspan fill="#3a4060"> ·································· </tspan><tspan fill="#f0abfc">0</tspan></text>
 <text x="630.8" y="120" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#56608f">+</text>
 <text x="765.2" y="120" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#56608f">&#x27;</text>
 <text x="891.2" y="186" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#56608f">*</text>
@@ -137,4 +137,6 @@
 <text x="773.6" y="516" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#7c86b8">.</text>
 <text x="689.6" y="626" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#56608f">*</text>
 <text x="756.8" y="670" textLength="8.4" lengthAdjust="spacingAndGlyphs" fill="#56608f">+</text>
+<line x1="32" y1="688" x2="899" y2="688" stroke="#252a41" stroke-width="1"/>
+<text x="465.5" y="708" text-anchor="middle" font-size="12" fill="#56608f">profile inspired by andrew6rant</text>
 </g></svg>

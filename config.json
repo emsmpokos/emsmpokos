@@ -3,6 +3,7 @@
   "prompt_user": "esmp",
   "prompt_host": "lab",
   "command": "neofetch",
+  "footer": "profile inspired by andrew6rant",
   "sections": [
     {
       "title": "about me",

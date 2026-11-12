@@ -146,7 +146,9 @@ def render(cfg, name, t):
     art_w, art_h = len(ART[0]), len(ART)
     art_x = pad_x + COLS * CW + 36
     width = int(art_x + art_w * CW + pad_x)
-    height = int(pad_y * 2 + len(lines) * LH)
+    footer = cfg.get("footer", "").strip()
+    footer_y = pad_y + len(lines) * LH + 30
+    height = int(footer_y + 26) if footer else int(pad_y * 2 + len(lines) * LH)
     art_top = pad_y + 14 + max(0, (len(lines) - art_h) // 2 + 1) * LH
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
            f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>',
@@ -176,6 +178,11 @@ def render(cfg, name, t):
             out.append(f'<text x="{art_x + j*CW:.1f}" y="{art_top + i*LH}" textLength="{len(seg)*CW:.1f}" '
                        f'lengthAdjust="spacingAndGlyphs" fill="{t[role]}">{escape(seg)}</text>')
             j = k
+    if footer:
+        out.append(f'<line x1="{pad_x}" y1="{footer_y - 20}" x2="{width - pad_x}" y2="{footer_y - 20}" '
+                   f'stroke="{t["border"]}" stroke-width="1"/>')
+        out.append(f'<text x="{width / 2:.1f}" y="{footer_y}" text-anchor="middle" font-size="12" '
+                   f'fill="{t["bg_star"]}">{escape(footer)}</text>')
     out.append("</g></svg>")
     (HERE / f"{name}.svg").write_text("\n".join(out), encoding="utf-8")
 
