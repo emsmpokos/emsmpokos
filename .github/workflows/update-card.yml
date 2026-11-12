@@ -1,0 +1,38 @@
+name: Update profile card
+
+on:
+  schedule:
+    - cron: "17 5 * * *"      # daily at 05:17 UTC
+  workflow_dispatch:           # lets you run it manually from the Actions tab
+  push:
+    paths:
+      - config.json
+      - build.py
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate card with fresh stats
+        env:
+          # Optional: add a personal access token as a repo secret named PROFILE_TOKEN
+          # to include private contributions. Falls back to the built-in token.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 build.py --fetch
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark.svg light.svg
+          git diff --cached --quiet || git commit -m "Update profile card stats"
+          git push
